@@ -7,7 +7,7 @@
   <li><a href="javascript:;">
     <code>
       "XYZ".customStringMethod();
-      // How you create method like above
+      // How you create method like this?
     </code> 
   </a></li>
   <li><a href="javascript:;">Accessibility</a></li>
