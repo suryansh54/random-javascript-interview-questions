@@ -71,10 +71,11 @@
   <li><a href="javascript:;">Decorators - Behind the seen?</a></li>
   <li><a href="javascript:;">Are the new ECMAScript 6 import and export asynchronous?</a></li>
   <li><a href="javascript:;">DOM traversing?</a></li>
-  <li><a href="javascript:;">Custom bind?</a></li>
+  <li><a href="javascript:;">Polyfill of bind function?</a></li>
   <li><a href="javascript:;">Find prime number?</a></li>
   <li><a href="javascript:;">Anagrams finder in javascript?</a></li>
   <li><a href="javascript:;">[0,1,1,0,0,1] 1's in the beginning and 0's in the end and Evaluate constraints - o(1) space , o(n) time complexity?</a></li>
   <li><a href="javascript:;">typeOf?</a></li>
   <li><a href="javascript:;">Palindrome series?</a></li>
+  <li><a href="javascript:;">ES6 - New features?</a></li>
 </ol>
