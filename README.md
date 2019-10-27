@@ -11,6 +11,8 @@
     </code> 
   </a></li>
   <li><a href="javascript:;">Accessibility</a></li>
+  <li><a href="javascript:;">Array Splice vs Slice</a></li>
+  <li><a href="javascript:;">Types of functions?</a></li>
   <li><a href="javascript:;">What are enumerable properties in JavaScript?</a></li>
   <li><a href="javascript:;">How to pass arguments to parent constructor in ES5?</a></li>
   <li><a href="javascript:;">Why is it impossible to change constructor function from prototype?</a></li>
