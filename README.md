@@ -81,7 +81,7 @@
   <li><a href="javascript:;">Palindrome series?</a></li>
   <li><a href="javascript:;">ES6 - New features?</a></li>
   <li>
-    <code>
+    ```javascript
       var obj = {
         name:'Suryansh',
         getThis: function(){
@@ -89,6 +89,6 @@
         }
       }
       obj.getThis(); // Parent Object {name: "Suryansh", getThis: ƒ}
-    </code>
+    ```
   </li>
 </ol>
