@@ -80,15 +80,4 @@
   <li><a href="javascript:;">typeOf?</a></li>
   <li><a href="javascript:;">Palindrome series?</a></li>
   <li><a href="javascript:;">ES6 - New features?</a></li>
-  <li>
-    ```javascript
-      var obj = {
-        name:'Suryansh',
-        getThis: function(){
-          console.log(this);
-        }
-      }
-      obj.getThis(); // Parent Object {name: "Suryansh", getThis: ƒ}
-    ```
-  </li>
 </ol>
