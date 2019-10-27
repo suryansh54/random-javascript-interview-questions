@@ -45,4 +45,36 @@
   <li><a href="javascript:;">Event Loop - How browser know stack is free?</a></li>
   <li><a href="javascript:;">retry API call with delay of 500ms & max retry count 5 if server gives 540 error?</a></li>
   <li><a href="javascript:;">Remove Duplicates element from Array?</a></li>
+  <li><a href="javascript:;">Map, Reduce, Filter, forEach in Array</a></li>
+  <li><a href="javascript:;">
+    <code>
+      var sentence = "Suryansh is a very very good boy"; 
+      // replace very to bad?
+    </code>
+  </a></li>
+  <li><a href="javascript:;">Event bubbling, capturing, Event delegation</a></li>
+  <li><a href="javascript:;">Check key exist in an object or not?</a></li>
+  <li><a href="javascript:;">function test(){} vs var test = function(){}</a></li>
+  <li><a href="javascript:;">Storage type</a></li>
+  <li><a href="javascript:;">JavaScript Optimization</a></li>
+  <li><a href="javascript:;">Design patterns</a></li>
+  <li><a href="javascript:;">innerText vs innerHtml vs label vs text vs textContent vs outerText.</a></li>
+  <li><a href="javascript:;">Asynchronous vs synchronous execution, what does it really mean?</a></li>
+  <li><a href="javascript:;">Web worker?</a></li>
+  <li><a href="javascript:;">Service worker and PWA?</a></li>
+  <li><a href="javascript:;">Promise vs Callback vs Observables</a></li>
+  <li><a href="javascript:;">Localstorage vs Sessionstorage vs Cookies</a></li>
+  <li><a href="javascript:;">If i do not put <!doctype html>,will html5 work?</a></li>
+  <li><a href="javascript:;">SVG vs Canvas?</a></li>
+  <li><a href="javascript:;">Prototypes?</a></li>
+  <li><a href="javascript:;">Interface?</a></li>
+  <li><a href="javascript:;">Decorators - Behind the seen?</a></li>
+  <li><a href="javascript:;">Are the new ECMAScript 6 import and export asynchronous?</a></li>
+  <li><a href="javascript:;">DOM traversing?</a></li>
+  <li><a href="javascript:;">Custom bind?</a></li>
+  <li><a href="javascript:;">Find prime number?</a></li>
+  <li><a href="javascript:;">Anagrams finder in javascript?</a></li>
+  <li><a href="javascript:;">[0,1,1,0,0,1] 1's in the beginning and 0's in the end and Evaluate constraints - o(1) space , o(n) time complexity?</a></li>
+  <li><a href="javascript:;">typeOf?</a></li>
+  <li><a href="javascript:;">Palindrome series?</a></li>
 </ol>
