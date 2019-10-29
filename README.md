@@ -667,3 +667,8 @@ var sentence = "Suryansh is a very very good boy";
 // replace very to bad?
 ```
 
+##### Question: 55
+```javascript
+typeof typeof <ANY_DATA_TYPE>
+// String
+```
