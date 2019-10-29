@@ -657,17 +657,11 @@ personDetails();
 
 ##### Question: 53
 ```javascript
-"XYZ".customStringMethod();
-// How you create method like this?
-```
-
-##### Question: 54
-```javascript
 var sentence = "Suryansh is a very very good boy"; 
 // replace very to bad?
 ```
 
-##### Question: 55
+##### Question: 54
 ```javascript
 typeof typeof <ANY_DATA_TYPE>
 // String
