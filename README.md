@@ -2,15 +2,7 @@
 
 <ol>
   <li><a href="javascript:;">Greedy Algorithm to find Minimum number of Coins</a></li>
-  <li><a href="javascript:;">Accessibility</a></li>
   <li><a href="javascript:;">How Adaptive Mobile design is different from RWD which used by Amazon and FB such as m.amazon.in and m.facebook.com</a></li>
-  <li><a href="javascript:;">
-    <code>
-      "XYZ".customStringMethod();
-      // How you create method like this?
-    </code> 
-  </a></li>
-  <li><a href="javascript:;">Accessibility</a></li>
   <li><a href="javascript:;">Array Splice vs Slice</a></li>
   <li><a href="javascript:;">Types of functions?</a></li>
   <li><a href="javascript:;">What are enumerable properties in JavaScript?</a></li>
@@ -48,12 +40,6 @@
   <li><a href="javascript:;">retry API call with delay of 500ms & max retry count 5 if server gives 540 error?</a></li>
   <li><a href="javascript:;">Remove Duplicates element from Array?</a></li>
   <li><a href="javascript:;">Map, Reduce, Filter, forEach in Array</a></li>
-  <li><a href="javascript:;">
-    <code>
-      var sentence = "Suryansh is a very very good boy"; 
-      // replace very to bad?
-    </code>
-  </a></li>
   <li><a href="javascript:;">Event bubbling, capturing, Event delegation</a></li>
   <li><a href="javascript:;">Check key exist in an object or not?</a></li>
   <li><a href="javascript:;">function test(){} vs var test = function(){}</a></li>
@@ -100,11 +86,8 @@
   <li><a href="javascript:;">Create chess board using javascript?</a></li>
   <li><a href="javascript:;">Scheduling in OS?</a></li>
   <li><a href="javascript:;">Sorting algorithm?</a></li>
-  <li><a href="javascript:;">Sort [0,1,0,0,1,0] time complexity should be O(n) and space complexity should me o(1) // [0,0,0,0,0,0,1,1,1,1]</a></li>
   <li><a href="javascript:;">Promise vs Observable as bases of performance and optimization?</a></li>
   <li><a href="javascript:;">Array inside array Nested to flatten array.</a></li>
-  <li><a href="javascript:;"> 1 > 2 > 3 , 3 < 2 < 1 </a></li>
-  <li><a href="javascript:;">console.log(true && 2);</a></li>
   <li><a href="javascript:;">Linked list?</a></li>
   <li><a href="javascript:;">Event emitter in javascript?</a></li>
   <li><a href="javascript:;">Use Strict?</a></li>
@@ -665,3 +648,22 @@ personDetails();
 // undefined undefined
 // Suryansh Srivastava
 ```
+
+##### Question: 52
+```javascript
+"XYZ".customStringMethod();
+// How you create method like this?
+```
+
+##### Question: 53
+```javascript
+"XYZ".customStringMethod();
+// How you create method like this?
+```
+
+##### Question: 54
+```javascript
+var sentence = "Suryansh is a very very good boy"; 
+// replace very to bad?
+```
+
