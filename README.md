@@ -94,6 +94,7 @@
   <li><a href="javascript:;">Use Strict?</a></li>
   <li><a href="javascript:;">Async and Await?</a></li>
   <li><a href="javascript:;">Accessibility?</a></li>
+  <li><a href="javascript:;">Polyfill of isArray(), bind</a></li>
 </ol>
 
 ### JavaScript logical questions
