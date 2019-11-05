@@ -1,6 +1,7 @@
 # Random Javascript Interview Questions
 
 <ol>
+  <li><a href="#1">Protecting objects in JavaScript</a></li>
   <li><a href="javascript:;">Greedy Algorithm to find Minimum number of Coins</a></li>
   <li><a href="javascript:;">How Adaptive Mobile design is different from RWD which used by Amazon and FB such as m.amazon.in and m.facebook.com</a></li>
   <li><a href="javascript:;">Array Splice vs Slice</a></li>
@@ -665,4 +666,54 @@ var sentence = "Suryansh is a very very good boy";
 ```javascript
 typeof typeof <ANY_DATA_TYPE>
 // String
+```
+
+# Answer
+#### Protecting objects in JavaScript
+There are three levels of protection:
+ - Preventing extensions is the weakest level
+ - Sealing is stronger
+ - Freezing is strongest
+ 
+**Preventing extensions is the weakest level**
+Makes it impossible to add properties to obj.
+ ```javascript
+// Syntax
+Object.preventExtensions(obj);
+ 
+// Example
+var obj = { foo: 'a' };
+Object.preventExtensions(obj);
+obj.bar = 'b';
+console.log(obj.bar) // undefined
+ ```
+And throws an error in strict mode.
+  ```javascript
+'use strict'
+var obj = { foo: 'a' };
+Object.preventExtensions(obj);
+obj.bar = 'b';
+console.log(obj.bar) // undefined
+ ```
+ Note: You can used inside the IIFE Function to use only specific one
+```javascript
+ (function () { 'use strict'; obj.bar = 'b' }());
+// TypeError: Can't add property bar, object is not extensible
+ ```
+ You can still delete properties, though.
+```javascript
+delete obj.foo
+// true
+obj.foo
+// undefined
+```
+
+**Checking whether an object is extensible**
+```javascript
+Object.isExtensible(obj)
+// checks whether obj is extensible:
+Object.isExtensible(obj)
+// false
+
+Ref: https://2ality.com/2013/08/protecting-objects.html
 ```
