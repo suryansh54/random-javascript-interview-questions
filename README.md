@@ -95,6 +95,7 @@
   <li><a href="javascript:;">Async and Await?</a></li>
   <li><a href="javascript:;">Accessibility?</a></li>
   <li><a href="javascript:;">Polyfill of isArray(), bind</a></li>
+  <li><a href="javascript:;">What is the return type of setIntervel and setTimeout?</a></li>
 </ol>
 
 ### JavaScript logical questions
@@ -669,6 +670,108 @@ typeof typeof <ANY_DATA_TYPE>
 // String
 ```
 
+##### Question: 55
+```javascript
+var myObject = {
+	foo: "bar",
+    func: function(){
+    	var self =this;
+        console.log("outer func: this.foo = "+ this.foo);
+        console.log("outer func: self.foo = "+ self.foo);
+        (function() {
+            console.log("inner func: this.foo = "+ this.foo);
+            console.log("inner func: this.foo = "+ self.foo);
+        }());
+    }
+};
+myObject.func();
+
+// OUTPUT
+// outer func: this.foo = bar
+// outer func: self.foo = bar
+// inner func: this.foo = undefined
+// inner func: this.foo = bar
+```
+
+##### Question: 56
+```javascript
+(function (){
+    console.log(1);
+        setTimeout (function (){console.log(2)},1000);
+        setTimeout (function (){console.log(3)},0);
+    console.log(4);
+})();
+
+// 1
+// 4
+// 3
+// 2
+```
+
+##### Question: 57
+```javascript
+(function(){
+    try{
+    	throw new Error("Suryansh");
+    }catch(y){
+		console.log(y);
+        var x =1;
+		var y = 2;
+		var z = 3;
+        console.log(x);
+    	console.log(y);
+		console.log(z);	
+    }
+    console.log(x);
+    console.log(y);
+    console.log(z);	
+})();
+
+/* Error: Suryansh
+    at <anonymous>:3:12
+    at <anonymous>:16:3
+1
+2
+3
+1
+undefined
+3 */
+```
+
+##### Question: 58
+```javascript
+let promise = new Promise(function (resolve,reject){
+	resolve(1);
+	setTimeout(() => resolve(2), 1000);
+});
+promise.then((data)=>{
+    console.log(data);
+});
+
+// 1
+```
+
+##### Question: 59
+```javascript
+var a={},
+    b={key:'b'},
+    c={key:'c'};
+
+a[b]=123;
+a[c]=456;
+
+console.log(a[b] === 456); //true
+
+// Explanation
+/*
+That's because property names are strings, but your b and c are objects. Therefore, they are stringified:
+
+b + ''; // "[object Object]"
+c + ''; // "[object Object]"
+b + '' === c + ''; // true
+*/
+```
+
 # Answer
 #### Protecting objects in JavaScript
 There are three levels of protection:
@@ -718,3 +821,7 @@ Object.isExtensible(obj)
 
 Ref: https://2ality.com/2013/08/protecting-objects.html
 ```
+
+
+
+
