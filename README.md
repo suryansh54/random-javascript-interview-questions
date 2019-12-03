@@ -772,6 +772,19 @@ b + '' === c + ''; // true
 */
 ```
 
+##### Question: 60
+Swap Array elements
+```javascript
+var data = ["A","B","C","D","E","F","G"];
+function swap(x, y){
+	var b = data[y];
+	data[y] = data[x]
+	data[x] = b
+	return data;
+}
+swap(3,4);
+```
+
 # Answer
 #### Protecting objects in JavaScript
 There are three levels of protection:
