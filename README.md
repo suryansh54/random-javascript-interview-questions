@@ -784,6 +784,32 @@ function swap(x, y){
 }
 swap(3,4);
 ```
+##### Question: 61
+```javascript
+(function(){
+    var a = b = 5;
+})()
+console.log("a defined "+ typeof a);
+console.log("b defined "+ typeof b);
+
+/*
+a defined undefined
+b defined number
+*/
+```
+
+##### Question: 62
+Swap Array elements
+```javascript
+x = y = 6;
+console.log("x defined "+ typeof x);
+console.log("y defined "+ typeof y);
+
+/*
+x defined number
+y defined number
+*/
+```
 
 # Answer
 #### Protecting objects in JavaScript
