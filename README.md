@@ -1066,6 +1066,90 @@ console.log(helloWorld[0]);
 // undefined
 ```
 
+##### Question: 87
+```javascript
+var length = 4;
+var numbers = [];
+for(var i = 0; i < length; i++) {
+    numbers.push(i+1);
+}
+console.log(numbers); 
+// [1, 2, 3, 4]
+```
+
+##### Question: 88
+```javascript
+function arrayFromValue(item) {
+    return
+     [item];
+}
+arrayFromValue(10);
+// undefined
+```
+
+##### Question: 89
+```javascript
+function arrayFromValue(item) {
+    return [item];
+}
+arrayFromValue(10);
+// [10]
+```
+
+##### Question: 90
+```javascript
+console.log(name);
+var name = "Suryansh";
+// Suryansh
+
+var name = "Ravish";
+console.log(name);
+var name = "Suryansh";
+// Ravish
+
+var name = "Ravish";
+console.log(name);
+name = "Suryansh";
+// Ravish
+```
+
+##### Question: 91
+```javascript
+(function(){
+    var name = "Ravish";
+    console.log(name);
+    var name = "Suryansh";
+})()
+// Ravish
+
+(function(){
+    console.log(name);
+    var name = "Suryansh";
+})()
+// undefined
+
+(function(){
+    name = "Ravish"
+    console.log(name);
+    var name = "Suryansh";
+})()
+// Ravish
+```
+
+##### Question: 92
+```javascript
+if(true) {
+    var x = "Hello";
+}
+console.log(x);
+// Hello
+
+if(true) {
+    let x = "Hello";
+}
+console.log(x);
+// Uncaught ReferenceError: x is not defined
+```
 # Answer
 #### Protecting objects in JavaScript
 There are three levels of protection:
