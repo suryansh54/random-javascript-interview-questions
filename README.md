@@ -1150,6 +1150,18 @@ if(true) {
 console.log(x);
 // Uncaught ReferenceError: x is not defined
 ```
+
+##### Question: 92
+```javascript
+console.log("window", window);
+console.log("self", self); // Used in web workers
+console.log("frames", frames);
+console.log("this", this);
+console.log("globalThis", globalThis);
+
+// All return Window
+```
+
 # Answer
 #### Protecting objects in JavaScript
 There are three levels of protection:
