@@ -109,7 +109,7 @@ function b() {
   function a() {}
 }
 b();
-console.log(a);
+console.log(a); // 1
 ```
 
 ##### Question: 2
@@ -123,6 +123,7 @@ function foo() {
 		return 8;
 	}
 }
+console.log(foo()); // 8
 ```
 
 ##### Question: 3
@@ -137,7 +138,7 @@ function foo() {
 	}
 	return bar();
 }
-console.log(foo());
+console.log(foo()); // 8
 ```
 
 ##### Question: 4
@@ -147,12 +148,16 @@ for (var i=0; i < 10; i++) {
 		console.log(i);
 	}, 10)
 }
-
+// 10 times 10
+/*
+The short answer is that the for loop executes first, then it looks for the i value, which is 5, and then outputs four times, one for each loop iteration.
+*/
 for (let i=0; i < 10; i++) {
 	setTimeout(function(){
 		console.log(i);
 	}, 10)
 }
+// 0 to 9
 ```
 
 ##### Question: 5
@@ -174,6 +179,10 @@ promise.then(function(){
 }).then(function(){
 	console.log('Success 4');
 })
+/*
+Error 1
+Success 4
+*/
 ```
 
 ##### Question: 6
@@ -193,6 +202,7 @@ for (var i=0; i < 5; i++) {
 		console.log(i);
 	}, i * 1000)
 }
+// 5 times 5
 ```
 
 ##### Question: 8
@@ -216,6 +226,7 @@ console.log(false === "0"); // false
         console.log(x);
     })(2)
 })(3)
+// 3
 ```
 
 ##### Question: 11
@@ -229,6 +240,10 @@ var hero = {
 var stoleSecredIdentity = hero.getSecretIdentity;
 console.log(stoleSecredIdentity());
 console.log(hero.getSecretIdentity());
+/*
+undefined
+Suryansh Srivastava
+*/
 ```
 
 ##### Question: 12
@@ -244,6 +259,7 @@ function outer() {
 	inner();
 }
 outer();
+// 4
 ```
 
 ##### Question: 13
@@ -254,12 +270,13 @@ c = { key: "C"};
 a[b] = 123;
 a[c] = 456;
 console.log(a[b]);
+// 456
 ```
 
 ##### Question: 14
 ```javascript
-1 + undefined
-1 - undefined
+1 + undefined // NaN
+1 - undefined // NaN
 ```
 
 ##### Question: 15
@@ -269,6 +286,7 @@ if(undefined) {
 } else {
   console.log("No Undefined");
 }
+// No Undefined
 ```
 
 ##### Question: 16
@@ -517,7 +535,8 @@ console.log(c); // 5
 
 ##### Question: 40
 ```javascript
-'2' + 1 + 3 or 2 + 1 + '3'
+'2' + 1 + 3 // 213
+2 + 1 + '3' // 33
 ```
 
 ##### Question: 41
@@ -539,6 +558,7 @@ for(var i=0; i<5;i++){
                 console.log(i);
     },i*1000);
 }
+// 5 times 5
 ```
 
 ##### Question: 44
@@ -550,12 +570,15 @@ arr.push(2);
 console.log(arr);
 console.log(arr.length);
 console.log(arr[3]);
+// (12) [1, empty × 9, 5, 2]
+// 12
 ```
 
 ##### Question: 44
 ```javascript
 function foo1(){
-	return {
+	return 
+    	{
 		name:"Suryansh"
 	}
 }
@@ -566,8 +589,8 @@ function foo2(){
 	}
 }
 
-console.log(foo1());
-console.log(foo2());
+console.log(foo1()); // undefined
+console.log(foo2()); // {name: "Suryansh"}
 ```
 
 ##### Question: 46
@@ -575,14 +598,15 @@ console.log(foo2());
 var x = 1,y =2;
 z =
 console.log(x+y);
+// 3
 ```
 
 ##### Question: 47
 ```javascript
 var myvar='a';
-console.log(window.myvar); // gives me a
+console.log(window.myvar); // a
 let mylet='b';
-console.log(window.mylet); // gives me undefined
+console.log(window.mylet); // undefined
 
 /* Both are still global, but vars are stored in the window object, while lets are stored in a declarative environment that you can't see (just like you can't access a variable in a function scope from outside of the function). When declared globally, both statements are pretty much identical in use.*/
 ```
@@ -655,7 +679,12 @@ personDetails();
 ##### Question: 52
 ```javascript
 "XYZ".customStringMethod();
-// How you create method like this?
+/*
+How you create method like this?
+String.prototype.customStringMethod = function(){
+    console.log(this);
+}
+*/
 ```
 
 ##### Question: 53
@@ -1098,18 +1127,18 @@ arrayFromValue(10);
 
 ##### Question: 90
 ```javascript
-console.log(name);
-var name = "Suryansh";
-// Suryansh
+console.log(name1);
+var name1 = "Suryansh";
+// undefined
 
-var name = "Ravish";
-console.log(name);
-var name = "Suryansh";
+var name1 = "Ravish";
+console.log(name1);
+var name1 = "Suryansh";
 // Ravish
 
-var name = "Ravish";
-console.log(name);
-name = "Suryansh";
+var name1 = "Ravish";
+console.log(name1);
+name1 = "Suryansh";
 // Ravish
 ```
 
