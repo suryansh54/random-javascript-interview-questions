@@ -811,6 +811,261 @@ y defined number
 */
 ```
 
+##### Question: 63
+```javascript
+var obj = { name:"Suryansh" }
+obj.__proto__ = {age:25}
+console.log(obj.age); // 25
+delete obj.age
+console.log(obj.age); // 25
+```
+
+##### Question: 64
+```javascript
+var Employee = {
+    company: 'xyz'
+}
+var emp1 = Object.create(Employee);
+delete emp1.company
+console.log(emp1.company); // xyz
+```
+
+##### Question: 65
+```javascript
+var output = (function(x){
+    delete x;
+    console.log(x);
+    return x;
+})(0);
+// 0
+```
+
+##### Question: 66
+```javascript
+var arr = [10,12,15,21];
+for(var i=0; i<arr.length; i++) {
+    setTimeout(function() {
+        console.log('index '+i+' ,element: '+arr[i]);
+    }, 1000)
+}
+// index 4 ,element: undefined
+```
+
+##### Question: 67
+```javascript
+console.log(typeof NaN); // number
+```
+
+##### Question: 68
+```javascript
+var array1 = [1,2,3,4,5,6,7,8,9,10];
+
+array1.forEach(function(elem){
+    if(elem == 5){
+        break;
+    }
+    console.log("Hello");
+})
+
+// Uncaught SyntaxError: Illegal break statement
+```
+
+##### Question: 69
+```javascript
+(function f() {
+    function f() {
+        return 1;
+    }
+    
+    return f()
+    function f() {
+        return 2;
+    }
+
+    function f() {
+        return "Hello World";
+    }
+})()
+// Hello World
+```
+
+##### Question: 70
+```javascript
+console.log(typeof Object)
+// Function
+```
+##### Question: 71
+```javascript
+console.log("a" - 45);
+// NaN
+```
+
+##### Question: 72
+```javascript
+function a11() {
+    console.log("Hello World");
+}
+console.log(Object.prototype.toString.call(a11));
+// [object Function]
+```
+
+##### Question: 73
+```javascript
+var book = {
+    title: "The Priniciple of Object-Oriented JavaScript",
+    toString: function() {
+         return "[Book " + this.title + "]";   
+    }
+}
+var message = "Book = " + book;
+console.log(message);
+// Book = [Book The Priniciple of Object-Oriented JavaScript]
+```
+
+##### Question: 74
+```javascript
+var c = Person('a');
+var b = new Person('b');
+var a = Person;
+function Person(name) {
+    this.first_name = name;
+}
+console.log(a.first_name); // undefined
+console.log(b.first_name); // b
+console.log(c.first_name); // Uncaught TypeError: Cannot read property 'first_name' of undefined
+```
+
+##### Question: 75
+```javascript
+function a(){
+
+}
+var a1 = new a();
+console.log(a1.constructor);
+// function a(){ }
+```
+
+##### Question: 76
+```javascript
+function sayNameForAll(label) {
+    console.log(label+ " " +this.name);
+}
+var person1 = {
+    name: "Suryansh"
+}
+var person2 = {
+    name: "Anita"
+}
+var name = "Ravish";
+sayNameForAll.call(this, "global");
+// global Ravish
+```
+
+##### Question: 77
+```javascript
+(function f(f){ return typeof f(); })(function(){return 1});
+// number
+```
+
+##### Question: 78
+```javascript
+var foo = {
+    bar: function() { return this.baz; },
+    baz: 1
+}
+(function(){
+    return typeof arguments[0]()
+})(foo.bar);
+// Uncaught TypeError: {(intermediate value)(intermediate value)} is not a function
+```
+
+##### Question: 79
+```javascript
+function returnNum() {
+    return 5;
+}
+typeof returnNum()
+// number
+```
+
+##### Question: 80
+```javascript
+let x = (() => {
+    for(var i=0; i<5; i++) {
+        try {
+            return i;
+        } finally {
+            if(i!=3) {
+                continue;
+            }
+        }
+    }
+})();
+console.log(x);
+// 3
+```
+
+##### Question: 81
+```javascript
+var salary = '1000$';
+(function(){
+    console.log("Original salary was "+ salary);
+    var salary = "5000$";
+    console.log("My new Salary " + salary);
+})()
+
+/*
+Original salary was undefined
+My new Salary 5000$
+*/
+```
+
+##### Question: 82
+```javascript
+(function(x, undefined){}).length;
+// 2
+```
+
+##### Question: 83
+```javascript
+var f = function g() { return 23; };
+typeof g();
+// Uncaught ReferenceError: g is not defined
+```
+
+##### Question: 84
+```javascript
+console.log(foo());
+function foo() {
+    var bar = function() {
+        return 3;
+    };
+    return bar();
+    var bar = function() {
+        return 8;
+    }
+}
+// 3
+```
+
+##### Question: 85
+```javascript
+var trees = [1,2,3,4,5,6,7,8];
+delete trees[3];
+console.log(trees.length);
+console.log(trees);
+// 8
+// [1, 2, 3, empty, 5, 6, 7, 8]
+```
+
+##### Question: 86
+```javascript
+const helloWorld = ['Hello', 'World'];
+helloWorld.length = 0;
+console.log(helloWorld[0]);
+// undefined
+```
+
 # Answer
 #### Protecting objects in JavaScript
 There are three levels of protection:
